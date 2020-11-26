@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navoculto {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: lightgrey;
+}
+
+/*caratula y trancicion valoracion*/
+
+.contcomentario {
+    height: 0;
+    position: absolute;
+    overflow: hidden;
+    transition: .5s ease;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgba(65, 105, 255, .5)
+}
+
+.resena {
+    position: relative;
+    height: 300px;
+    width: 200px;
+    margin: 10px;
+}
+
+.resena:hover .contcomentario {
+    height: 100%;
+}
+
+.comentario {
+    position: absolute;
+    padding: 10px;
+    text-align: center;
+}
+
+.caratula {
+    display: block;
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.parrcomentario {
+    font-size: 24px;
+    color: white;
+}
+
+.estrella {
+    font-size: 40px;
+    color: gold;
+}
+
+.estrellanegra {
+    color: black;
+}
+
+.numero {
+    font-size: 78px;
+    color: white;
+}
+
+/*caratula y trancicion valoracion*/
+
+.btnmenu {
+    background: none;
+    border: 0;
+}
+
+.item {
+    list-style: none;
+    padding: 5px;
+}
+
+li.item:hover {
+    background-color: cornflowerblue;
+}
+
+header {
+    background-color: royalblue;
+    padding: 5px;
+    border-bottom: 5px solid cornflowerblue;
+}
+
+.cuerpo {
+    background-color: lightgray;
+}
+
+footer {
+    height: 100px;
+    color: lightgray;
+    background-color: royalblue;
+    text-align: center;
+}
+
+.categorias {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    padding-left: 15px;
+}
+
+.cajatitulo {
+    background-color: royalblue;
+    padding-left: 15px;
+    padding-top: 5px;
+    height: 40px;
+    color: aliceblue;
+    border-bottom: 5px solid cornflowerblue;
+    font-size: 14px;
+}
+
+.derechos {
+    border-bottom: 0px;
+}
+
+.contactos {
+    padding: 20px;
+}
+
+.redes {
+    display: inline;
+    list-style: none;
+}
+
+.resaltado {
+    background-color: blueviolet;
+    font-style: italic;
+    color: aliceblue;
+}
+
+.tablaresena {
+    width: 100%;
+    margin-bottom: 16px;
+    color: #212529;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+.tablaresena td, .tablaresena th {
+    padding: 12px;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+.contenedorform {
+    margin: 0 auto;
+    width: 300px;
+    border: dashed royalblue;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+button {
+    background-color: royalblue;
+    color: whitesmoke;
+    padding: 5px 15px;
+    text-align: center;
+    border: none;
+    margin: 2px;
+}
+
+.incorrecto {
+    color: red;
+    font-style: italic;
+}
+
+.oculto {
+    display: none;
+}
+
+.input {
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid cornflowerblue;
+    background-color: gainsboro;
+    width: 280px;
+}
+
+@media only screen and (min-width:700px) {
+    .navoculto {
+        display: initial;
+    }
+    .btnmenu {
+        display: none;
+    }
+    .item {
+        display: inline-block;
+        margin: 0px 10px;
+    }
+    .contenedornav {
+        text-align: right;
+    }
+    .contenedorform {
+        width: 400px;
+    }
+    .input {
+        width: 350px;
+    }
+    .cuerpo {
+        padding: 10px;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width:700px) {
+    .categorias {
+        grid-template-columns: repeat(2, 50%);
+    }
+}
+
+@media only screen and (min-width: 700px) and (max-width:1200px) {
+    .categorias {
+        grid-template-columns: repeat(3, 33%);
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width:1400px) {
+    .categorias {
+        grid-template-columns: repeat(4, 25%);
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .categorias {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reseñando: Otra pagina de reseñas...</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <script type="text/javascript" src="js/btnnav.js"></script>
+    <script type="text/javascript" src="js/formulario.js"></script>
+
+
+
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo" />
+            </div>
+            <div class="contenedornav">
+                <button class="btnmenu" id="botonmenu"><img src="img/iconohamburguesa.png" alt="menu"></button>
+                <nav id="navegador" class="navoculto">
+                    <li class="item" id="home"><a href="index.html">HOME</a></li>
+                    <li class="item" id="newresena"><a href="nuevaresena.html">NUEVA RESEÑA</a></li>
+                    <li class="item" id="recomendados"><a href="recomendados.html">RECOMENDADOS</a></li>
+                </nav>
+            </div>
+
+        </header>
+        <section class="cuerpo">
+            <button id="abrirfiltro">Filtro</button>
+                <div id="contenedorfiltro" class="oculto">
+                    Filtrar por
+                    <select id="filtrarpor" class="input">
+                        <option value="Nombre">Nombre</option>
+                        <option value="Titulo">Titulo</option>
+                        <option value="Valoracion">Valoracion</option>
+                        <option value="Comentario">Comentario</option>
+                    </select>
+                    <input id="filtro" class="input" type="text" value="">
+                    <button id="filtrar">Filtrar</button>
+                    <button id="quitarfiltro" class="oculto">Quitar filtro</button>
+                </div>
+                <table class="tablaresena">
+                    <thead>
+                        <tr>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Titulo</th>
+                            <th scope="col">Valoracion</th>
+                            <th scope="col">Comentario</th>
+                            <th scope="col">Eliminar</th>
+                            <th scope="col">Editar</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabladatos">
+                    </tbody>
+
+                </table>
+                <button id="vaciartabla">Vaciar tabla</button>
+                <div class="cajatitulo">
+                    <h1>Nueva reseña</h1>
+                </div>
+                <div id="contformulario" class="contenedorform">
+                    <form>
+                        Nombre: </br><input id="nombre" class="input" type="text" name="nombre" value="" /> </br>
+                        Titulo: </br><input id="titulo" class="input" type="text" name="titulo" value="" /></br>
+                        <p> Valoracion:</p>
+                        <select id="valoracion" class="input">
+                            <option value="0 estrellas">0 estrellas</option>
+                            <option value="1 estrellas">1 estrellas</option>
+                            <option value="2 estrellas">2 estrellas</option>
+                            <option value="3 estrellas">3 estrellas</option>
+                            <option value="4 estrellas">4 estrellas</option>
+                            <option value="5 estrellas">5 estrellas</option>
+                        </select> </br>
+                        </br>
+                        <textarea class="input" id="comentario" name="comentario" rows="8"
+                            cols="40">Escriba aqui la reseña </textarea>
+                        </br>
+                        </br>
+                        </br>
+                    </form>
+                    <p id="errorformulario" class="incorrecto oculto">Complete todos los campos del formulario</p>
+                    <p id="errorcaptcha" class="incorrecto oculto">Captcha incorrecto</p>
+                    <div>
+                        <img id="dado1" src="img/dado1.png" />
+                        <img id="dado2" src="img/dado1.png" />
+                        <img id="dado3" src="img/dado1.png" />
+                        <img id="dado4" src="img/dado1.png" />
+                    </div>
+                    <button id="actualizacaptcha">Actualizar captcha</button>
+                    <input id="ingresado" class="input" type="number" name="catpcha" value="" />
+                    <button id="enviar">Enviar</button>
+                    <button id="modificar" class="oculto">Modificar</button>
+                    <button id="cancelar" class="oculto">Cancelar</button>
+                    <button id="agregartres">Agregar TRES</button>
+                </div>
+        </section>
+        <footer>
+
+            <ul class="contactos">
+                <li class="redes"><img src="img/facebook.png" alt="Facebook"></li>
+                <li class="redes"><img src="img/instagram.png" alt="Instagram"></li>
+                <li class="redes"><img src="img/twitter.png" alt=Twitter></li>
+            </ul>
+            <div class="derechos">
+                <p>2019 - reseÑando</p>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
